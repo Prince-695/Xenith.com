@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pictures/sunset-city-illustration.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    background: #000000bf;
+    height: 8rem;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-section h2{
+    font-size: 3rem;
+    color: rgb(255, 94, 0);
+    font-family: "Nova Script", system-ui;
+}
+
+.nav-section span{
+    color: white;
+}
+
+.nav-links{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.nav-links li a{
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    padding: 1rem;
+}
+
+.nav-links li a:hover{
+    color: rgb(255, 94, 0);
+    border: 1px solid rgb(255, 94, 0);
+    border-radius: 5rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+#srch{
+    width: 18rem;
+    height: 4rem;
+    border: 2px solid rgb(255, 94, 0);
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+#srch:focus {
+    outline: none;
+    border: 2px solid rgb(255, 94, 0);
+}
+
+#btn{
+    border: 1px solid rgb(255, 94, 0);
+    padding: 0.9rem 2rem;
+    border-radius: 0.5rem;
+    color: white;
+    letter-spacing: 1px;
+    background-color: rgb(255, 94, 0);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+::placeholder{
+    color: white;
+}
+
+.hero-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(70%);
+    /* margin: 15rem 0; */
+    flex-direction: column;
+}
+
+.hero-section h2{
+    color: white;
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+    font-family: "Nova Script", system-ui;
+}
+
+.hero-section h1{
+    font-size: 6.4rem;
+    color: white;
+    text-transform: capitalize;
+    
+}
+
+#para{
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 2rem;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons .learn-more{
+  text-decoration: none;
+  color: white;
+}
+
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 0.8rem;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    rgb(255, 94, 0) 0%,
+    hsl(0, 100%, 50%) 8%,
+    hsl(0, 0%, 0%) 92%,
+    hsl(0, 100%, 50%) 100%
+  );
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: rgb(255, 94, 0);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+.size{
+    font-size: 1.5rem;
+}
+
+/* reusable code */
+
+.margin1{
+    margin: 3rem 4rem;
+}
+
+/* games section start */
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 2rem ;
+    font-family: "Nova Script", system-ui;  
+    /* text-decoration: underline; */
+}
+
+/* <!-- ==============Games Section================= --> */
+
+.cards{
+    width: 30rem;
+    height:auto;
+    border: 1px solid gray;
+    background-color: lightgray;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    margin: 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px;
+    transition: 0.5s ease;
+}
+
+.cards:hover{
+  transform: translateY(-1rem);
+}
+
+.cards-area{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* cursor: pointer; */
+  flex-wrap: wrap;
+}
+
+.card-img img{
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  margin-bottom: 0.8rem;
+  transition: 0.5s ease;
+}
+
+.card-img img:hover{
+  transform: scale(1.1);
+}
+
+.card-desp h3{
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  /* font-family: "Nova Script", system-ui; */
+  padding-bottom: 1rem;
+  text-transform: capitalize;
+  
+}
+
+.card-desp h2{
+  color: #262626;
+  text-align: center;
+  font-size: 1.5rem;
+  /* font-family: "Nova Script", system-ui; */
+  text-transform: capitalize;
+}
+
+.card-desp a{
+  color: rgb(255, 94, 0);
+}
+
+.next{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.next a{
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: white;
+  margin: 0 0.2rem;
+  cursor: pointer;
+  background-color: rgb(255, 94, 0);
+  font-size: 1.4rem;
+  transition: 0.3s ease;
+}
+
+.next a:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* <!-- ==============Online Games Section================= --> */
+
+.live-cards{
+  width: 40rem;
+  height: 35rem;
+  border: 1px solid gray;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(emulators/steam.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.5s ease; 
+}
+
+.live-cards #btns a{
+  text-decoration: none;
+  color: white;
+}
+
+.live-cards:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transform: translateY(-1rem);
+}
+
+.live-cards1{
+  width: 40rem;
+  height: 35rem;
+  border: 1px solid gray;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(emulators/epic\ games.png);
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; 
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.live-cards1 #btns a{
+  text-decoration: none;
+  color: white;
+}
+
+.live-cards1:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transform: translateY(-1rem);
+}
+
+.live-cards2{
+  width: 40rem;
+  height: 35rem;
+  border: 1px solid gray;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(emulators/riot.ico);
+  background-color: white;
+  background-size:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.live-cards2 #btns a{
+  text-decoration: none;
+  color: white;
+}
+
+.live-cards2:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transform: translateY(-1rem);
+}
+
+.live-games-area{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.live-cards h2 {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.live-cards1 h2 {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.live-cards2 h2 {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.live-cards p {
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.live-cards1 p {
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.live-cards2 p {
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.buttons #btns{
+  width: 13rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 0.4rem;
+}
+
+.buttons #btns:hover{
+  background-color: rgb(255, 94, 0);
+  border: 1px solid transparent;
+}
+
+.buttons{
+  margin-top: 2rem;
+}
+
+/* <!-- ==============Contact Us================= --> */
+
+/* .left{
+  width: 50rem;
+  height: auto;
+  margin: 3rem;
+}
+
+.image img{
+  width: 50rem;
+  height: 32rem;
+  border-radius: 0.4rem;
+}
+
+.contact-us{
+  display: flex;
+  width: 100%;
+}
+
+.right{
+  width: 100%;
+}
+
+.login-form .text{
+  width: 100%;
+  height: 4rem;
+  color: black;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.label{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+form #btn{
+  width: 10rem;
+  height: 4rem;
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 0.4rem;
+}
+
+form #btn:hover{
+  background-color: rgb(255, 94, 0);
+  border: 1px solid transparent;
+} */
+
+/* <!-- ==============Footer================= --> */
+
+.desp{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background-color: black;
+}
+
+.icons img{
+  height: 5rem;
+  cursor: pointer;
+}
+
+.desp .para{
+  color: white;
+  font-size: 1.4rem;
+}
