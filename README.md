@@ -10,10 +10,15 @@ Emulator Links: Access emulators to relive classic gaming moments.
 Simple Design: A lightweight interface that’s easy to navigate and enjoy.
 ![image](https://github.com/user-attachments/assets/28ffadf2-6070-4134-8629-30988b358494)
 Homepage
+
+
 ![image](https://github.com/user-attachments/assets/945ec9b9-4447-4485-9301-a6df58f5e75a)
 Games Section
+
+
 ![image](https://github.com/user-attachments/assets/fa32e157-61fb-4f9d-841e-6c4114e36e07)
 Emulator Links
+
 
 💻 Tech Stack
 HTML: Structured the content and layout of the website.
