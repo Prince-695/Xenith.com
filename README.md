@@ -1,4 +1,5 @@
-🎮 Xenith.com
+🎮
+Xenith.com
 Welcome to Xenith.com, my very first web project! This retro-inspired gaming website was designed to bring together gamers and provide access to game downloads and emulators. Built entirely using HTML and CSS, it’s a testament to the joy of coding and gaming combined!
 
 Your gateway to classic gaming.
